@@ -3,9 +3,9 @@ package com.w2a.API_Batch3.TestUtils;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
 
+import org.testng.annotations.DataProvider;
+
 import com.w2a.API_Batch3.setUp.APISetUp;
-
-
 
 public class DataProviderClass extends APISetUp {
 
@@ -26,7 +26,7 @@ public class DataProviderClass extends APISetUp {
 	 * return data; // System.out.println(data); return data; }
 	 */
 
-	@org.testng.annotations.DataProvider(name = "dp")
+	@DataProvider(name = "dp")
 	public Object[][] getData(Method m) {
 
 		System.out.println(configProperty);

@@ -21,8 +21,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class TestCreateCustomerAPI extends APISetUp {
 
-	@Test()
-	public void validateCreateCustomerAPI() {
+	@Test(dataProvider = "dp", dataProviderClass = DataProviderClass.class)
+	public void validateCreateCustomerAPI(Hashtable<String, String> hm) {
 		// Stripe URL for web : https://docs.stripe.com/api/customers/list
 		// Stripe URL for API Keys : https://dashboard.stripe.com/test/apikeys
 
