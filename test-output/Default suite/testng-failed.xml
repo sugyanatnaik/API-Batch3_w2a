@@ -5,8 +5,8 @@
     <classes>
       <class name="com.w2a.API_Batch3.testCases.TestCreateCustomerAPI">
         <methods>
+          <include name="validateCreateCustomerAPI" invocation-numbers="0 1"/>
           <include name="beforeMethod"/>
-          <include name="validateCreateCustomerAPI"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>

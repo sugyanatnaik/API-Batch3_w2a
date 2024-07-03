@@ -21,8 +21,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class TestCreateCustomerAPI extends APISetUp {
 
-	@Test(dataProvider = "dp", dataProviderClass = DataProviderClass.class)
-	public void validateCreateCustomerAPI(Hashtable<String, String> hm) {
+	@Test(dataProvider = "dp", dataProviderClass = DataProviderClass.class, priority = 1, enabled = true, dependsOnMethods = "m1")
+	public void validateCreateCustomerAPI(Hashtable<String, String> data) {
 		// Stripe URL for web : https://docs.stripe.com/api/customers/list
 		// Stripe URL for API Keys : https://dashboard.stripe.com/test/apikeys
 
@@ -33,8 +33,8 @@ public class TestCreateCustomerAPI extends APISetUp {
 
 		testLevelLog.get().assignAuthor("Sugyan");
 		testLevelLog.get().assignCategory("Regression");
-		RequestSpecification spec = setRequestSpecification().formParam("email", "sugyanpatnaik@gmail.com")
-				.formParam("description", "Testing Stripe User Create").formParam("balance", 100).log().all();
+		RequestSpecification spec = setRequestSpecification().formParam("email", data.get("email"))
+				.formParam("description", data.get("description")).formParam("balance", 100).log().all();
 
 		System.out.println("=========================================================");
 
@@ -61,6 +61,11 @@ public class TestCreateCustomerAPI extends APISetUp {
 		response.prettyPrint();
 
 		Assert.assertEquals(response.getStatusCode(), 200);
+	}
+	
+	@Test(priority = 0)
+	public void m1() {
+		Assert.fail();
 	}
 
 }

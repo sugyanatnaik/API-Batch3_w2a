@@ -28,6 +28,7 @@ public class APISetUp {
 	public static ExtentReports extentReport;
 	public static ThreadLocal<ExtentTest> classLevelLog = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelLog = new ThreadLocal<ExtentTest>();
+	public static ExtentTest test = null;
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -48,27 +49,33 @@ public class APISetUp {
 	}
 
 	@BeforeMethod
-	public void beforeMethod(Method method) {
-
-		ExtentTest test = classLevelLog.get().createNode(method.getName());
+	public void beforeMethod(Method method) { // This is same as onTestStart of Listeners
+		
+		test = classLevelLog.get().createNode(method.getName());
 		testLevelLog.set(test);
-		testLevelLog.get().info("Testcase :- " + method.getName() + " : execution started");
 
-//		System.out.println("Testcase :- " + method.getName() + " : execution started");
+		/*
+		 * ExtentTest test = classLevelLog.get().createNode(method.getName());
+		 * testLevelLog.set(test); testLevelLog.get().info("Testcase :- " +
+		 * method.getName() + " : execution started");
+		 */
+
 	}
 
 	@AfterMethod
-	public void afterMethod(ITestResult result) {
+	public void afterMethod(ITestResult result) { // This is same as onTestSuccess of Listeners
 
-		if (result.getStatus() == ITestResult.SUCCESS) {
-			testLevelLog.get().pass("This testcase is PASSED");
-		} else if (result.getStatus() == ITestResult.FAILURE) {
-			testLevelLog.get().fail("This testcase is FAILED");
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			testLevelLog.get().skip("This testcase is SKIPPED");
-		}
+		/*
+		 * if (result.getStatus() == ITestResult.SUCCESS) {
+		 * testLevelLog.get().pass("This testcase is PASSED"); } else if
+		 * (result.getStatus() == ITestResult.FAILURE) {
+		 * testLevelLog.get().fail("This testcase is FAILED"); } else if
+		 * (result.getStatus() == ITestResult.SKIP) {
+		 * testLevelLog.get().skip("This testcase is SKIPPED"); }
+		 * 
+		 * extentReport.flush();
+		 */
 
-		extentReport.flush();
 	}
 
 	@AfterSuite

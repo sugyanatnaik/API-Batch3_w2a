@@ -1,58 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="8" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-29T00:56:29 IST" name="Default suite" finished-at="2024-05-29T00:56:31 IST" duration-ms="2229">
+  <suite started-at="2024-07-02T23:27:11 IST" name="Suite" finished-at="2024-07-02T23:27:11 IST" duration-ms="243">
     <groups>
     </groups>
-    <test started-at="2024-05-29T00:56:29 IST" name="Default test" finished-at="2024-05-29T00:56:31 IST" duration-ms="2229">
+    <test started-at="2024-07-02T23:27:11 IST" name="Test" finished-at="2024-07-02T23:27:11 IST" duration-ms="243">
       <class name="com.w2a.API_Batch3.testCases.TestCreateCustomerAPI">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@32811494]" started-at="2024-05-29T00:56:28 IST" name="beforeSuite" finished-at="2024-05-29T00:56:29 IST" duration-ms="493" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:10 IST" name="beforeSuite" finished-at="2024-07-02T23:27:11 IST" duration-ms="358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@32811494]" started-at="2024-05-29T00:56:29 IST" name="beforeClass" finished-at="2024-05-29T00:56:29 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="beforeClass" finished-at="2024-07-02T23:27:11 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@32811494]" started-at="2024-05-29T00:56:29 IST" name="beforeMethod" finished-at="2024-05-29T00:56:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="beforeMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.validateCreateCustomerAPI(java.util.Hashtable)]]>
+                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateCreateCustomerAPI(java.util.Hashtable)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@32811494]" started-at="2024-05-29T00:56:29 IST" name="validateCreateCustomerAPI" data-provider="dp" finished-at="2024-05-29T00:56:31 IST" duration-ms="2021" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{}]]>
-              </value>
-            </param>
-          </params>
+        <test-method retried="true" signature="m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="m1" finished-at="2024-07-02T23:27:11 IST" duration-ms="8" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1(TestCreateCustomerAPI.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateCustomerAPI -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@32811494]" started-at="2024-05-29T00:56:31 IST" name="afterMethod" finished-at="2024-05-29T00:56:31 IST" duration-ms="167" status="PASS">
+        </test-method> <!-- m1 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="afterMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateCreateCustomerAPI status=SUCCESS method=TestCreateCustomerAPI.validateCreateCustomerAPI(java.util.Hashtable)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@32811494] output={null}]]]>
+                <![CDATA[[TestResult name=m1 status=SKIP method=TestCreateCustomerAPI.m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@32811494]" started-at="2024-05-29T00:56:31 IST" name="afterSuite" finished-at="2024-05-29T00:56:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="beforeMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="m1" finished-at="2024-07-02T23:27:11 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1(TestCreateCustomerAPI.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="afterMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=m1 status=SKIP method=TestCreateCustomerAPI.m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method retried="true" signature="m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="m1" finished-at="2024-07-02T23:27:11 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1(TestCreateCustomerAPI.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="beforeMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="afterMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=m1 status=SKIP method=TestCreateCustomerAPI.m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="beforeMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="m1" finished-at="2024-07-02T23:27:11 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1(TestCreateCustomerAPI.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="afterMethod" finished-at="2024-07-02T23:27:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=m1 status=FAILURE method=TestCreateCustomerAPI.m1()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validateCreateCustomerAPI(java.util.Hashtable)[pri:1, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="validateCreateCustomerAPI" finished-at="2024-07-02T23:27:11 IST" depends-on-methods="com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.validateCreateCustomerAPI() on instance com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731 depends on not successfully finished methods 
+[com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1() on instance com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.validateCreateCustomerAPI() on instance com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731 depends on not successfully finished methods 
+[com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1() on instance com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPI -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@14d14731]" started-at="2024-07-02T23:27:11 IST" name="afterSuite" finished-at="2024-07-02T23:27:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.w2a.API_Batch3.testCases.TestCreateCustomerAPI -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

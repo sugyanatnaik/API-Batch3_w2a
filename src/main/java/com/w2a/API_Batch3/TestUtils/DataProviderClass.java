@@ -35,27 +35,36 @@ public class DataProviderClass extends APISetUp {
 		int rows = excel.getRowCount(sheetName);// 100
 		String testName = m.getName();
 		int testCaseRowNum = 1;
+		boolean testCaseFound = false;
 
 		for (testCaseRowNum = 1; testCaseRowNum <= rows; testCaseRowNum++) {
 
 			String testCaseName = excel.getCellData(sheetName, 0, testCaseRowNum);
 			// System.out.println("TestCase name in excel-->"+testCaseName);
-			if (testCaseName.equalsIgnoreCase(testName))
+			if (testCaseName.equalsIgnoreCase(testName)) {
+				testCaseFound = true;
 				break;
+			}
 
-		} // Checking total rows in test case
+		}
+
+		if (testCaseFound == false) {
+			System.out.println("The Testcase name " + testName + " is not found in the excel sheet");
+			System.exit(0); // This is not working
+		}
+
+		// Checking total rows in test case
 		System.out.println("TestCase starts from:- " + testCaseRowNum);
-
-		int dataStartRowNum = testCaseRowNum + 2;// dataStartRowNum=3
+		int dataStartRowNum = testCaseRowNum + 2;
 
 		int testRows = 0;
 		while (!excel.getCellData(sheetName, 0, dataStartRowNum + testRows).equals("endOfTestData")) {
 
-			testRows++;// 1
+			testRows++;
 		}
-		// Checking total cols in test case
+		System.out.println("Total no of rows:" + testRows);
 
-		// System.out.println("Total no of rows:"+testRows);
+		// Checking total cols in test case
 		int colStartColNum = testCaseRowNum + 1;// 2
 		int testCols = 0;
 
@@ -64,12 +73,7 @@ public class DataProviderClass extends APISetUp {
 			testCols++;
 
 		}
-		// [2][1]
-
 		Object[][] data = new Object[testRows][1];
-		// object[][] data= new Object[2][1];
-		// data[0][0]=
-		// data[1][0]=
 
 		int i = 0;
 		for (int rNum = dataStartRowNum; rNum < (dataStartRowNum + testRows); rNum++) {
