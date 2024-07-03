@@ -21,7 +21,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class TestCreateCustomerAPI extends APISetUp {
 
-	@Test(dataProvider = "dp", dataProviderClass = DataProviderClass.class, priority = 1, enabled = true, dependsOnMethods = "m1")
+	@Test(dataProvider = "dp", dataProviderClass = DataProviderClass.class, priority = 1, enabled = true)
 	public void validateCreateCustomerAPI(Hashtable<String, String> data) {
 		// Stripe URL for web : https://docs.stripe.com/api/customers/list
 		// Stripe URL for API Keys : https://dashboard.stripe.com/test/apikeys
@@ -62,8 +62,8 @@ public class TestCreateCustomerAPI extends APISetUp {
 
 		Assert.assertEquals(response.getStatusCode(), 200);
 	}
-	
-	@Test(priority = 0)
+
+	@Test(priority = 0, enabled = false)
 	public void m1() {
 		Assert.fail();
 	}

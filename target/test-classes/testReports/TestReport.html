@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report for Architect Batch 2</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 2, 2024 11:26:53 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 4, 2024 12:42:48 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,16 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -66,33 +76,45 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Sugyan</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Regression</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">TestCreateCustomerAPI</p>
             <p class="text-sm">
-              <span>11:26:53 PM</span> / <span>00:00:00:236</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:42:48 AM</span> / <span>00:00:01:641</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">TestCreateCustomerAPI</h5>
-<span class='badge badge-success'>07.02.2024 11:26:53 PM</span>
-<span class='badge badge-danger'>07.02.2024 11:26:53 PM</span>
-<span class='badge badge-default'>00:00:00:236</span>
+<h5 class="test-status text-pass">TestCreateCustomerAPI</h5>
+<span class='badge badge-success'>07.04.2024 12:42:48 AM</span>
+<span class='badge badge-danger'>07.04.2024 12:42:50 AM</span>
+<span class='badge badge-default'>00:00:01:641</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,30 +126,15 @@
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
               <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li><span class='badge badge-default'>30:01:626</span></li>
               <li></li>
             </ul>
           </div>
           <div class="card-title">
-            <a class="node " id="2"><span>m1</span></a>
+            <a class="node " id="2"><span>validateCreateCustomerAPI</span></a>
             <div class="node-attr">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge skip-bg log ">Skip</span></li>
-              <li><span class='badge badge-default'>30:00:004</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="3"><span>m1</span></a>
-            <div class="node-attr">
-            </div>
+<span class="badge badge-pill badge-default">Sugyan</span>
+<span class="badge badge-pill badge-default">Regression</span>            </div>
           </div>
         </div>
         <div class="collapse">
@@ -137,228 +144,83 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <b>Testcase :- m1 : execution started</b>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <b>This Test Case got Skipped - </b>m1
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>30:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="4"><span>m1</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge skip-bg log ">Skip</span></li>
-              <li><span class='badge badge-default'>30:00:001</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="5"><span>m1</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <b>Testcase :- m1 : execution started</b>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <b>This Test Case got Skipped - </b>m1
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>30:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="6"><span>m1</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge skip-bg log ">Skip</span></li>
-              <li><span class='badge badge-default'>30:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="7"><span>m1</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <b>Testcase :- m1 : execution started</b>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <b>This Test Case got Skipped - </b>m1
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge pass-bg log ">Pass</span></li>
-              <li><span class='badge badge-default'>30:00:000</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="8"><span>m1</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge fail-bg log ">Fail</span></li>
-              <li><span class='badge badge-default'>30:00:005</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="9"><span>m1</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <b>Testcase :- m1 : execution started</b>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <details><summary><b><font color=red>Exception Occured:Click to see</font></b ></summary>[org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.fail(Assert.java:116)<br> com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.m1(TestCreateCustomerAPI.java:68)<br> java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)<br> java.base/java.lang.reflect.Method.invoke(Method.java:580)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1597)<br> org.testng.TestRunner.privateRun(TestRunner.java:819)<br> org.testng.TestRunner.run(TestRunner.java:619)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1228)<br> org.testng.TestNG.runSuites(TestNG.java:1134)<br> org.testng.TestNG.run(TestNG.java:1101)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
-
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>11:26:53 PM</td>
-        <td>
-          <span class='badge white-text red'>This Test case got Failed</span>
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-toolbar node-info">
-            <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge skip-bg log ">Skip</span></li>
-              <li><span class='badge badge-default'>30:00:001</span></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="card-title">
-            <a class="node " id="10"><span>validateCreateCustomerAPI</span></a>
-            <div class="node-attr">
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>11:26:53 PM</td>
+        <td>12:42:48 AM</td>
         <td>
           <b>Testcase :- validateCreateCustomerAPI : execution started</b>
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>11:26:53 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:42:48 AM</td>
         <td>
-          <b>This Test Case got Skipped - </b>validateCreateCustomerAPI
+          Request Specification set
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:42:50 AM</td>
+        <td>
+          {
+  "id": "cus_QPNM1VOeEsggI3",
+  "object": "customer",
+  "account_balance": 100,
+  "address": null,
+  "balance": 100,
+  "created": 1720033968,
+  "currency": "inr",
+  "default_currency": "inr",
+  "default_source": null,
+  "delinquent": false,
+  "description": "Test user1 is creating a customer in Stripe Database",
+  "discount": null,
+  "email": "sugyanpatnaik1@gmail.com",
+  "invoice_prefix": "B2082FA7",
+  "invoice_settings": {
+    "custom_fields": null,
+    "default_payment_method": null,
+    "footer": null,
+    "rendering_options": null
+  },
+  "livemode": false,
+  "metadata": {},
+  "name": null,
+  "next_invoice_sequence": 1,
+  "phone": null,
+  "preferred_locales": [],
+  "shipping": null,
+  "sources": {
+    "object": "list",
+    "data": [],
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_QPNM1VOeEsggI3/sources"
+  },
+  "subscriptions": {
+    "object": "list",
+    "data": [],
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_QPNM1VOeEsggI3/subscriptions"
+  },
+  "tax_exempt": "none",
+  "tax_ids": {
+    "object": "list",
+    "data": [],
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_QPNM1VOeEsggI3/tax_ids"
+  },
+  "tax_info": null,
+  "tax_info_verification": null,
+  "test_clock": null
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:42:50 AM</td>
+        <td>
+          <b>This Test Case got Passed</b>
         </td>
       </tr>
   </tbody>
@@ -379,30 +241,134 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:42:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>validateCreateCustomerAPI</a>
+<div class="">
+<span class="badge badge-default">TestCreateCustomerAPI.validateCreateCustomerAPI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Sugyan</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Sugyan</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:42:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>validateCreateCustomerAPI</a>
+<div class="">
+<span class="badge badge-default">TestCreateCustomerAPI.validateCreateCustomerAPI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 2, 2024 11:26:53 PM</h3>
+<h3>Jul 4, 2024 12:42:48 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 2, 2024 11:26:53 PM</h3>
+<h3>Jul 4, 2024 12:42:50 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Class Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Class Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -418,12 +384,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> class passed
+<div><small data-tooltip='100%'>
+<b>1</b> class passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> class failed,
+<small data-tooltip='0%'><b>0</b> class failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -441,10 +407,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='44%'><b>4</b> methods passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> methods passed</small></div>
 <div>
-<small data-tooltip='11%'><b>1</b> methods failed,
-<b>4</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> methods failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -461,10 +427,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='25%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='18%'><b>2</b> events failed,
-<b data-tooltip='%'>9</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>3</b> others
 </small>
 </div>
 </div>
@@ -480,10 +446,45 @@
 </div></div>
 <script>
 var timeline = {
-"TestCreateCustomerAPI":0.236
+"TestCreateCustomerAPI":1.641
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Sugyan</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Regression</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -503,15 +504,15 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 4,
-failChild: 1,
+passChild: 1,
+failChild: 0,
 warningChild: 0,
-skipChild: 4,
+skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
 passGrandChild: 0,
@@ -520,11 +521,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 2,
+passEvents: 1,
+failEvents: 0,
 warningEvents: 0,
-skipEvents: 4,
-infoEvents: 5
+skipEvents: 0,
+infoEvents: 3
 };
 </script>        </div>
       </div>
