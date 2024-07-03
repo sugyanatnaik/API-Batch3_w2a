@@ -1,9 +1,9 @@
 com\w2a\API_Batch3\listeners\CustomListeners.class
 com\w2a\API_Batch3\setUp\APISetUp.class
-com\w2a\API_Batch3\TestUtils\ExcelReader.class
 com\w2a\API_Batch3\TestUtils\ExtentManager.class
-com\w2a\API_Batch3\TestUtils\CommonVariables.class
-com\w2a\API_Batch3\TestUtils\DataProviderClass.class
 com\w2a\API_Batch3\TestUtils\ConfigProperty.class
 com\w2a\API_Batch3\listeners\RetryTransformer.class
 com\w2a\API_Batch3\listeners\RetryListeners.class
+com\w2a\API_Batch3\TestUtils\ExcelReader.class
+com\w2a\API_Batch3\TestUtils\CommonVariables.class
+com\w2a\API_Batch3\TestUtils\DataProviderClass.class

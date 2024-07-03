@@ -17,6 +17,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.w2a.API_Batch3.TestUtils.ConfigProperty;
 import com.w2a.API_Batch3.TestUtils.ExcelReader;
 import com.w2a.API_Batch3.TestUtils.ExtentManager;
+import com.w2a.API_Batch3.TestUtils.TestUtil;
 
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
@@ -37,7 +38,7 @@ public class APISetUp {
 
 		RestAssured.baseURI = configProperty.getBaseURI();
 		RestAssured.basePath = configProperty.getBasePath();
-
+		TestUtil.archiveTestReport();
 		extentReport = ExtentManager
 				.GetExtent(configProperty.getTestReportFilePath() + configProperty.getTestReportName());
 	}
@@ -50,7 +51,7 @@ public class APISetUp {
 
 	@BeforeMethod
 	public void beforeMethod(Method method) { // This is same as onTestStart of Listeners
-		
+
 		test = classLevelLog.get().createNode(method.getName());
 		testLevelLog.set(test);
 

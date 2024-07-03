@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-04T00:42:48 IST" name="Suite" finished-at="2024-07-04T00:42:50 IST" duration-ms="1797">
+  <suite started-at="2024-07-04T01:13:11 IST" name="Suite" finished-at="2024-07-04T01:13:13 IST" duration-ms="1858">
     <groups>
     </groups>
-    <test started-at="2024-07-04T00:42:48 IST" name="Test" finished-at="2024-07-04T00:42:50 IST" duration-ms="1797">
+    <test started-at="2024-07-04T01:13:11 IST" name="Test" finished-at="2024-07-04T01:13:13 IST" duration-ms="1858">
       <class name="com.w2a.API_Batch3.testCases.TestCreateCustomerAPI">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T00:42:48 IST" name="beforeSuite" finished-at="2024-07-04T00:42:48 IST" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T01:13:11 IST" name="beforeSuite" finished-at="2024-07-04T01:13:11 IST" duration-ms="364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T00:42:48 IST" name="beforeClass" finished-at="2024-07-04T00:42:48 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T01:13:11 IST" name="beforeClass" finished-at="2024-07-04T01:13:11 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T00:42:48 IST" name="beforeMethod" finished-at="2024-07-04T00:42:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T01:13:11 IST" name="beforeMethod" finished-at="2024-07-04T01:13:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateCreateCustomerAPI(java.util.Hashtable)[pri:1, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T00:42:48 IST" name="validateCreateCustomerAPI" data-provider="dp" finished-at="2024-07-04T00:42:50 IST" duration-ms="1624" status="PASS">
+        <test-method signature="validateCreateCustomerAPI(java.util.Hashtable)[pri:1, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T01:13:11 IST" name="validateCreateCustomerAPI" data-provider="dp" finished-at="2024-07-04T01:13:13 IST" duration-ms="1666" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateCustomerAPI -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T00:42:50 IST" name="afterMethod" finished-at="2024-07-04T00:42:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T01:13:13 IST" name="afterMethod" finished-at="2024-07-04T01:13:13 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T00:42:50 IST" name="afterSuite" finished-at="2024-07-04T00:42:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@2002348]" started-at="2024-07-04T01:13:13 IST" name="afterSuite" finished-at="2024-07-04T01:13:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
